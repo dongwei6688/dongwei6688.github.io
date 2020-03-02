@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="董伟">
+
+
+
+    <meta name="description" content="记录个人成长的空间，包括读书笔记、技术学习、个人思考和一些随笔。">
+
+
+    <meta name="keywords" content="读书,思考,技术">
+
+
+<title>从研发生产、企业管理、企业运营、业务创新剖析企业上云的诸多益处 | 董伟的空间</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">董伟的日志</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../index.html">首页</a>
+                
+                    <a class="menu-item" href="../../../../archives">文章</a>
+                
+                    <a class="menu-item" href="../../../../categories">分类</a>
+                
+                    <a class="menu-item" href="../../../../about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">董伟的日志</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../index.html">首页</a>
+                
+                    <a class="menu-item" href="../../../../archives">文章</a>
+                
+                    <a class="menu-item" href="../../../../categories">分类</a>
+                
+                    <a class="menu-item" href="../../../../about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">从研发生产、企业管理、企业运营、业务创新剖析企业上云的诸多益处</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">董伟</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">March 3, 2020&nbsp;&nbsp;1:36:04</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="../../../../categories/%E6%8A%80%E6%9C%AF/">技术</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h4 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h4><blockquote>
+<p>2018 年 8月10日，工信部印发《推动企业上云实施指南（2018-2020年）》，提出到2020年，力争实现企业上云环境进一步优化，行业企业上云意识和积极性明显提高，上云比例和应用深度显著提升，云计算在企业生产、经营、管理中的应用广泛普及，全国新增上云企业100万家，形成典型标杆应用案例100个以上，形成一批有影响力、带动力的云平台和企业上云体验中心。</p>
+<p>随着工信部结合“中国制造2025”和“十三五”系列规划部署，两会“百万企业上云”引起大量关注，一时间企业上云成为热门话题，使“上云是常态，不上云是例外”成为共识。那究竟“企业上云”是什么？企业上云后会获得哪些好处？接下来我们进一步讨论。</p>
+</blockquote>
+<h2 id="企业上云是什么？"><a href="#企业上云是什么？" class="headerlink" title="企业上云是什么？"></a>企业上云是什么？</h2><p><strong>“企业上云”</strong> 是指企业通过互联网与云计算手段，将企业的基础系统、管理系统及业务系统部署到云端，利用网络便捷地获取云服务商提供的计算、存储、网络、平台、软件数据等服务，以此提高企业的资源配置效率、优化生产经营管理、降低信息化建设成本、提高业务能力和发展水平。</p>
+<p>在开始讨论之前呢，有必要先大概说一下云计算的概念。</p>
+<h2 id="什么是云计算？"><a href="#什么是云计算？" class="headerlink" title="什么是云计算？"></a>什么是云计算？</h2><p>关于什么是云计算这个问题，业界在早期一直没有一个明确的定义，各方观点都不统一，直到2012年，美国国家标准与技术研究院(NIST) 结合业内各方观点，给出云计算的“模型说”定义: </p>
+<blockquote>
+<p><strong>云计算是一种模型，用户可以方便地通过网络按需访问一个可配置计算资源（如网络、服务器、存储、应用和服务）的共享池，这些资源可以被迅速提供并发布，同时实现管理成本或服务供应商干预的最小化。</strong></p>
+</blockquote>
+<p>NIST还提出了云计算的五大基本特征、三大服务交付模式和四大部署模式，如下图所示：<br><img src="/2020/03/03/the-benefits-of-using-cloud/pic1.png" alt="图 1：NIST 定义的云计算模型"></p>
+<h2 id="企业上云会获得哪些好处？"><a href="#企业上云会获得哪些好处？" class="headerlink" title="企业上云会获得哪些好处？"></a>企业上云会获得哪些好处？</h2><p>世间万物都有着属于自己的生命周期，企业也不例外。自企业创立开始，随着企业的经营发展，一般会经历四个阶段： 创业期、成长期、成熟期和衰落期（或持续发展期）。</p>
+<p>无论在哪个阶段，企业都会面对同样的问题“生存与发展“，接下来就从与企业生存与发展息息相关的几个环节：研发生产、企业管理、企业运营、业务创新四个角度来看看企业上云给企业带来的好处。<br><img src="/2020/03/03/the-benefits-of-using-cloud/pic2.png" alt="图 2：企业上云好处四大方面"></p>
+<h3 id="一、从研发生产角度来说"><a href="#一、从研发生产角度来说" class="headerlink" title="一、从研发生产角度来说"></a>一、从研发生产角度来说</h3><p><img src="/2020/03/03/the-benefits-of-using-cloud/pic3.png" alt="图 3：企业上云好处（之）研发生产角度"></p>
+<h4 id="1、上云可大幅降低技术开发成本，提升开发效率"><a href="#1、上云可大幅降低技术开发成本，提升开发效率" class="headerlink" title="1、上云可大幅降低技术开发成本，提升开发效率"></a>1、上云可大幅降低技术开发成本，提升开发效率</h4><p>在上云之前，企业进行核心业务开发的同时，还不得不投入很大精力去进行许多非核心系统的构建和开发，例如：财务管理系统、内部 IM、文件共享系统、CRM、OA 系统等等，并且要投入大量精力来构建IT 基础设施，如服务器、交换机、路由器，部署数据库、缓存、消息队列等等，之后才能基于这些系统或者基础设施进行产品研发，浪费了大量的时间和成本。</p>
+<p>而采用云计算之后，许多非核心系统可通过SaaS 方式获得使用授权，而 IT 基础设施可采用成熟的第三方平台，这样便可大幅提升开发效率，节省开发投入。</p>
+<h4 id="2、上云可优化生产过程"><a href="#2、上云可优化生产过程" class="headerlink" title="2、上云可优化生产过程"></a>2、上云可优化生产过程</h4><p>就具体的生产制造过程而言，运用云技术后，企业可以将各个车间的生产数据上传至整个云平台系统中。通过对各车间的生产数据、生产数量、运行状态等信息数据进行分析加工，企业可以制定更加具体的生产计划，优化生产的结构流程，使得企业的生产效率和生产水平都得到不同程度的提升，而且还能对设备进行 7x24全天候监控，实现对设备的远程诊断和维护等等，大大优化了生产过程。</p>
+<h4 id="3、上云可提升应用开发部署敏捷性、快速响应业务需求"><a href="#3、上云可提升应用开发部署敏捷性、快速响应业务需求" class="headerlink" title="3、上云可提升应用开发部署敏捷性、快速响应业务需求"></a>3、上云可提升应用开发部署敏捷性、快速响应业务需求</h4><p>相比传统软件长达数月甚至一年以上的部署时间，云服务系统的部署通常数周甚至数小时即可完成，可快速响应业务需求，实现实时、近实时IT交付，同时不需要为基础设施升级投入过多的资金成本。</p>
+<p>企业借助云上的软件应用规范和数据服务，能够更迅速、更便捷、更高效地提高生产管理效率，促进软件架构复用、架构和开发技术栈统一、提高研发效率、加快应用部署、缩短业务开发周期。帮助企业节省了时间与成本，方便他们更加专注于自身业务的拓展。</p>
+<h3 id="二、从企业管理角度来说"><a href="#二、从企业管理角度来说" class="headerlink" title="二、从企业管理角度来说"></a>二、从企业管理角度来说</h3><p><img src="/2020/03/03/the-benefits-of-using-cloud/pic4.png" alt="图 4：企业上云好处（之）企业管理角度"></p>
+<h4 id="1、上云后可以提高工作效率"><a href="#1、上云后可以提高工作效率" class="headerlink" title="1、上云后可以提高工作效率"></a>1、上云后可以提高工作效率</h4><p>云服务解决方案可提高制造业业务的效率，简化许多典型业务流程中的步骤，取代手工活动，几乎不再需要重复的数据输入。</p>
+<p>“云”带来了更大的灵活性和移动性，使用云，可以让企业在一台机器上开始工作并且在另外一台机器上完成它。而这一切不受空间限制。并且，企业可以将数据访问扩展到多种设备：台式机、笔记本、平板电脑、手机等。</p>
+<p>另外，诸如云主机、数据库、负载均衡、Github、码云、钉钉、Salesforce、在线 ERP 、腾讯邮箱、企业微信等等IaaS、PaaS 和 SaaS 服务，大大缩短了企业构建非核心业务系统的时间，企业可以在启动初期按需引入成熟的流程和软件，这些成熟的工具将大大节约工作时间，提升每个人的工作效率。</p>
+<h4 id="2、上云可以节约软件成本"><a href="#2、上云可以节约软件成本" class="headerlink" title="2、上云可以节约软件成本"></a>2、上云可以节约软件成本</h4><p>2011年3月31日是微软公司向我国政府机关集体购买办公软件Office优惠政策的截止日期，鉴于多个厂商的正版软件优惠期上半年也将结束，专家建议借鉴欧美经验，依靠云计算技术减少软件正版化的成本负担。</p>
+<p>公司利用云技术将不必为每一个员工都购买正版使用权，当你使用云计算的时候，只需要为公司购买一个正版使用权就可以了，所有员工可以依靠云计算技术共同使用该软件。软件即服务（SaaS）现在已经得到越来越多的人的认可，随着它的发展，云计算节省软件成本的好处将会越来越被体现。</p>
+<h4 id="3、上云可以获得更高的安全保障和数据保护"><a href="#3、上云可以获得更高的安全保障和数据保护" class="headerlink" title="3、上云可以获得更高的安全保障和数据保护"></a>3、上云可以获得更高的安全保障和数据保护</h4><p>云服务相对于传统服务更安全。因为专业的云服务提供商有更专业的安全团队和更可靠的安全保障系统。云计算能给企业数据带来更安全的保证，可能很多人并不同意这个观点，但是云计算能给企业带来的安全是真实存在的。</p>
+<p>在我国，IT人员极其缺乏，网络安全人员更是少之又少，在一些企业，很难对每台计算机的安全做到固若金汤，而云计算则能够很好的解决此类问题，服务提供商能够给企业提供最完善、最专业的解决方案，使企业数据安全得到最大保证。</p>
+<p>另外，云计算与本地部署的服务器相比具有更高的安全性。而如果遭遇自然灾害或全面计算机崩溃，采用云计算的企业无需担心丢失关键数据和业务应用程序，而且随时可以查看数据，更不用担心出门忘记带电脑。</p>
+<h4 id="4、上云可提供企业管理和运营的高可见度"><a href="#4、上云可提供企业管理和运营的高可见度" class="headerlink" title="4、上云可提供企业管理和运营的高可见度"></a>4、上云可提供企业管理和运营的高可见度</h4><p>云服务能够为不同的用户提供强大且易于使用的报告和分析功能，实时了解企业的业务状况，先进的多维度分析和可视化数据可以帮助企业的决策更加明智。</p>
+<p>云服务器拥有更强大的管理能力。云服务器可以实现远程集中化管理，以及各种业务的备份，例如设备远程操控，资料的调取，数据的传输，数据备份等等。</p>
+<p>此外，上“云”还能实现在线办公协同、计划管理、流程审批等等，为工作管理提供实时看板、工作通知，将用户关注的企业数据通过消息推动呈现出来，实时掌握企业管理动态；根据业务需求，灵活配置应用场景，完成业务融合和精算。</p>
+<p>在小企业中，你可能身兼数职，而大规模的IT部署需要一位管理员时刻保持在最佳状态。云服务可以在管理方面为企业提供高效规划。</p>
+<h3 id="三、从企业运营角度来说"><a href="#三、从企业运营角度来说" class="headerlink" title="三、从企业运营角度来说"></a>三、从企业运营角度来说</h3><p><img src="/2020/03/03/the-benefits-of-using-cloud/pic5.png" alt="图 5：企业上云好处（之）企业运营角度"></p>
+<h4 id="1、上云可有效减少前期的一次性资本投入"><a href="#1、上云可有效减少前期的一次性资本投入" class="headerlink" title="1、上云可有效减少前期的一次性资本投入"></a>1、上云可有效减少前期的一次性资本投入</h4><p>我们知道传统物理服务器价格昂贵，客户需要自行购置物理服务器和网络设备，前期固定资产投入的资金较大，占用了大量的企业现金流。租用机房，还要再支付高额的机柜租用费用和维护费用。</p>
+<p>而采用云服务器，这些大笔的投入就全免了，客户购买云服务商提供的云资源，按需（可选择按小时、按天、按月、按年等）调配、弹性使用、灵活扩展。客户不用在硬件设备及机房上支付一分钱，只需支付自己使用资源的费用。</p>
+<p>这样使企业从资本支出（CAPEX）转移到运营成本（OPEX），前期只需要较少的启动成本就能运营下去，而且还不需要企业负责运行过程中的维护费用，使客户能够专注于增加在其职权范围内的核心价值，如业务和流程的洞察力，而不是建立和维护IT基础设施。</p>
+<h4 id="2、上云后可精细化控制运营成本"><a href="#2、上云后可精细化控制运营成本" class="headerlink" title="2、上云后可精细化控制运营成本"></a>2、上云后可精细化控制运营成本</h4><p>企业在运营过程中，有时是因为产品生命周期短，有时是为了市场宣传或者参与类似 618、双 11 等活动，就需要应对突发流量，在没有云计算之前，大家为了应对偶尔的突发流量，就要多采购一些额外的 IT 设施资源，如：服务器、带宽、机柜等来做资源储备，以应对突发流量，而在平时，这些额外采购的资源就处于闲置状态，多投入的资金便毫无价值。</p>
+<p>相反，如果采用云服务，在突发流量出现时，通过海量资源和多站点的负载均衡，动态加速，保证激增业务时IT的自动化升级能力，动态的增加云计算资源，而当突发流量消失后，又可以快速减少云资源，这样客户就只需要为产生效益的资源付费，大大提升了运营效率和资源的利用率。</p>
+<h4 id="3、上云可极大降低运维成本"><a href="#3、上云可极大降低运维成本" class="headerlink" title="3、上云可极大降低运维成本"></a>3、上云可极大降低运维成本</h4><p>传统服务器、平台、软件等系统的运维工作复杂，包括系统配置、故障恢复、环境优化、日常运维等。用户需要聘请专门的技术人员进行管理维护。当发生系统故障时，例如硬件故障，还需协调机房人员处理。这就需要高额的人员成本和运维成本，如果处理不及时，还将给用户带来业务上的损失。</p>
+<p>而云服务由供应商进行运维工作，用户只需负责使用或者进行简单的内部管理即可，不仅极大地减轻运维工作压力，还基本上实现了运维零成本。</p>
+<h4 id="4、上云后可以灵活支撑业务"><a href="#4、上云后可以灵活支撑业务" class="headerlink" title="4、上云后可以灵活支撑业务"></a>4、上云后可以灵活支撑业务</h4><p>云计算是一种按需分配的IT资源供给方式，可以满足对IT资源的“拿来就能用”，“想要就能有”的需求。通过资源池化，企业借助云计算可以实现水平扩展，从而获得更高的扩展性。</p>
+<p>云服务最重要的一点就是灵活性，能够为企业提供适用于所有业务类型的功能，从而满足对企业多业务、跨地区的高效支撑，且更易于升级。云服务器实现了硬件上的隔离以及宽带上的独享，不受地域，流量等的限制。</p>
+<p>当你购买硬件和软件，你需要支付固定的费用，在这些软、硬件损坏之前你必需一直使用它。但使用云服务，企业可以拥有更灵活的选择，企业可以在任何时间并且花费很少的前提下，停止使用你现在所不需要的东西。</p>
+<p>企业可以跟据自己的业务情况来决定是否需要增加服务，企业也可以从小做起，用最少的投资来满足你的现状，而当企业的业务增长到需要增加服务的时候，可以根据自己情况对服务进行选择性增加，使企业的业务利用性最大化。</p>
+<h3 id="四、从业务创新角度来说"><a href="#四、从业务创新角度来说" class="headerlink" title="四、从业务创新角度来说"></a>四、从业务创新角度来说</h3><p><img src="/2020/03/03/the-benefits-of-using-cloud/pic6.png" alt="图 6：企业上云好处（之）业务创新角度"></p>
+<h4 id="1、上云可为企业上层需求赋能"><a href="#1、上云可为企业上层需求赋能" class="headerlink" title="1、上云可为企业上层需求赋能"></a>1、上云可为企业上层需求赋能</h4><p>在企业发展早期，企业上云可能考虑更多的是成本，这在中小企业或者初创企业中依旧成立，但很多大型企业在业务发展过程中会发现需要某种上层能力，比如 AI 或者大数据，但自身技术实力达不到，或者企业核心竞争力不在技术本身，此时就可能会考虑上云，甚至这已经成为不少企业选择云平台的重要原因。</p>
+<p>对云计算厂商而言，已经过了通过价格战进行竞争的阶段，目前的关注重点也已经逐渐向上层应用转移。通过云平台为大数据、物联网和人工智能实现多业态融合提供技术支撑，将新技术转换为新动能，以实现产业升级。</p>
+<h4 id="2、上云可使企业集中精力放在业务创新上"><a href="#2、上云可使企业集中精力放在业务创新上" class="headerlink" title="2、上云可使企业集中精力放在业务创新上"></a>2、上云可使企业集中精力放在业务创新上</h4><p>大多数中小企业并没有庞大的IT预算开支，处理技术采购方面问题的精力也相当有限，需要将有限的资金用到真正需要的方面，这也是中小企业的共同点。</p>
+<p>云计算技术降低了IT的硬件和运维成本，比如原来硬件的高可用性，通过软件和运维工作来弥补。CIO、CTO 们将不再需要专门的IT资产管理、关注IT技术问题，他们可以抽出更多的精力来从事信息化和业务创新上，以支撑企业业务运营。</p>
+<p>另外，摆脱了基础设施建设及非核心系统建设干扰的产品、业务、开发人员，也可以将更多的精力投注在让业务更具创新发展的方向上。</p>
+<h4 id="3、提高“创新”到“业务增长”的转换率"><a href="#3、提高“创新”到“业务增长”的转换率" class="headerlink" title="3、提高“创新”到“业务增长”的转换率"></a>3、提高“创新”到“业务增长”的转换率</h4><p>云计算可通过容器技术与IaaS技术整合方案，让应用开发者在无需考虑IT资源前提下，加快创意到产品和服务的转化周期，以及提高“创新”到“业务增长”的转换率。同时云计算支持开放、开源，为大数据、物联网、人工智能实现多业态融合提供有力支撑。</p>
+<p>借助云技术平台强大的组件和数据能力，企业可以快速的实现从创意到产品和服务的转化，以最快最短的周期推出具有市场竞争力的产品，抢占先机。</p>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p><img src="/2020/03/03/the-benefits-of-using-cloud/pic7.png" alt="图 7： 从企业外部环境看"></p>
+<p>从企业外部环境来看，企业上云可以快速实现上下游生产及市场的整合优化，以云平台为基础，通过信息流带动技术流、资金流、人才流、物资流，可以有效整合优化设计、生产和市场资源，实现产业链上下游的高效对接与协同创新，重塑生产组织方式和创新机制。还能整合产业、行业、企业上下游的资源，形成联盟商圈，完成资源协同在线，信息互通，产品服务共享等，最大化发挥产业协同效应。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>在新经济下， ICT 的使用效率、运营水平决定着业务创新能力和服务体验。传统以应用和系统为核心的IT，不仅开支高、管理复杂，同时还形成大量数据孤岛，很难应对成百上千应用的快速部署，以及百万/千万级用户查询处理对IT资源动态配置和负载均衡的需求。传统IT部署已经成为业务全球化难以逾越的技术高墙。</p>
+<p>以云计算、大数据、物联网、人工智能为代表的新IT，不仅加快了企业的市场响应速度、优化用户体验、降低运营成本，还提高了企业在新经济下的生存能力和发展空间。相对传统IT，云计算让用户能够按需迅捷获得IT资源、根据业务需求动态升级扩展，保证了高动态并发性能的同时，经济地实现业务连续性，并能够通过无缝技术升级满足业务扩展需求。</p>
+<p>在新经济下，云计算不再只局限中小企业和创新公司，越来越多的企业级用户选择云计算作为核心IT资源。对于企业级用户而言，云计算不仅加速应用开发部署、简化升级运维、保证业务稳定，同时，云计算提升了业务创新能力、协作效率，优化用户体验。</p>
+<p>相对于早期云计算主要侧重于IaaS降低开支，新经济环境下云计算更大的价值在于让用户快速将物联网、人工智能、大数据转化为新经济的业务价值，以实现创新突破，从而提高企业在新经济下的生存能力和发展空间。在新经济下，云计算已经成为IT新常态。</p>
+<h4 id="【作者介绍】"><a href="#【作者介绍】" class="headerlink" title="【作者介绍】"></a>【作者介绍】</h4><blockquote>
+<h4 id="董伟，迅达云（SpeedyCloud）CTO"><a href="#董伟，迅达云（SpeedyCloud）CTO" class="headerlink" title="董伟，迅达云（SpeedyCloud）CTO"></a>董伟，迅达云（SpeedyCloud）CTO</h4><p>可信云评估专家组成员，高效运维社区联合发起人，拥有15年的互联网技术从业经验，其中包括7年CDN技术背景，6年云计算技术背景，现在迅达云负责研发、产品及运维管理，致力于建设云服务生态，并推动云服务在不同行业的解决方案落地。</p>
+</blockquote>
+<h4 id="【参考资料】"><a href="#【参考资料】" class="headerlink" title="【参考资料】"></a>【参考资料】</h4><p>[1]. 工信部 -《推动企业上云实施指南（2018-2020年）》解读<br>[2]. 亿欧智库 -《2019年中国云计算行业发展研究报告》<br>[3]. ITIF -《The 2017 State New Economy Index 》<br>[4]. 中桥数据谈 - 《新经济，新业态 ｜ 壹 · 云成为新经济IT新常态》<br>[5]. BestSDK（公众号） -《企业上云服务的，3大好处》<br>[6]. 世民谈云计算（公众号） - 《我的一点企业上云经验》</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>董伟</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://oncemore.life/2020/03/03/the-benefits-of-using-cloud/">https://oncemore.life/2020/03/03/the-benefits-of-using-cloud/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"># 云计算</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="../how-to-read-a-book-effectively/">《如何有效阅读一本书：超实用笔记读书法》干货版</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 董伟 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
