@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="董伟">
+
+
+
+    <meta name="description" content="记录我的所思、所感、所想，包括一些读书笔记、技术分享、思维实践一些随笔。">
+
+
+    <meta name="keywords" content="读书,思考,技术">
+
+
+<title>给你三个故事治疗你的拖延症 | 董伟的空间</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">董伟的日志</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../index.html">首页</a>
+                
+                    <a class="menu-item" href="../../../../archives">文章</a>
+                
+                    <a class="menu-item" href="../../../../categories">分类</a>
+                
+                    <a class="menu-item" href="../../../../tag">标签</a>
+                
+                    <a class="menu-item" href="../../../../about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">董伟的日志</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../index.html">首页</a>
+                
+                    <a class="menu-item" href="../../../../archives">文章</a>
+                
+                    <a class="menu-item" href="../../../../categories">分类</a>
+                
+                    <a class="menu-item" href="../../../../tag">标签</a>
+                
+                    <a class="menu-item" href="../../../../about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">给你三个故事治疗你的拖延症</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">董伟</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2020-02-05&nbsp;&nbsp;12:21:48</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="../../../../categories/%E6%80%9D%E7%BB%B4/">思维</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>在整理过去资料的时候，突然看到之前整理的一篇文章，就是本文中的故事二，觉得很受启发，因为时常感觉到自己的拖延癌已经到了晚期，而这个小故事让我意识到，其实最好的治疗方法，就是马上开始。</p>
+<p>其实关于拖延症的话题已经有很多了，无论从心理、生理、脑科学的都有，关于此类的书也很多，但是貌似道理都懂就是做不来。听过一种说法，说是讲道理就会启动大脑的防卫意识，而讲故事则可以绕过防卫意识，于是乎，为了不让内容过于单调，我又找了另外两个故事，编辑成一个系列，讲给爱拖延的自己，或者一直等一个最佳时机去实践梦想的你，如果恰好你也觉得有用，那真是谢天谢地了。</p>
+<h2 id="故事-一《68-岁学日语》"><a href="#故事-一《68-岁学日语》" class="headerlink" title="故事 一《68 岁学日语》"></a>故事 一《68 岁学日语》</h2><div class="image-box">
+                <img src="/2020/02/05/three-stories-for-procrastinator/pic1.png" alt="图1：小败局书封" title="图1：小败局书封" class>
+                <p class="image-box-title">图1：小败局书封</p>
+            </div>
+
+<p>在《小败局》里有这样一个故事：某日语学习班报名时，来了一位老者。<br>登记小姐问：“您是给孩子报名？”<br>老人答道：“不，是给我自己报名。”<br>小姐愕然，屋里的年轻人也愕然。</p>
+<p>老人解释说：“儿子在日本找了个媳妇，他们每次回来，说话叽叽咕咕，我听不懂，心里挺着急，我想听懂他们的话。”<br>小姐问：“您今年高寿？”<br>老人答道：“68岁。”</p>
+<p>小姐说：“您想听懂他们的话，至少要学两年。可您那时已经70岁了。”<br>老人笑一笑，很幽默地反问：“姑娘，你以为我如果不学，两年后就是66岁吗？”<br>说完大家都笑了，人们在笑声中，似乎也在思索着什么。</p>
+<p>没错，生命是在不断成长的，或者可以说是向死而生，无论你进步或者原地踏步，这位老人当然可以继续保持原来的样子，但不管怎样，2 年后她都会变成 70 岁，而学与不学的最大差别就是：一个能够跟自己儿媳妇开心的交谈，而另外一个还是只能像以前一样在一旁尴尬的笑着。<br>我们总以为开始得太晚，因此放弃，殊不知只要开始，就永远不晚。</p>
+<h2 id="故事-二《半部书》"><a href="#故事-二《半部书》" class="headerlink" title="故事 二《半部书》"></a>故事 二《半部书》</h2><p><strong>作者：徐全庆</strong></p>
+<div class="image-box">
+                <img src="/2020/02/05/three-stories-for-procrastinator/pic2.jpeg" alt="图2：一个看起来像兰帕德的老人（非本人)" title="图2：一个看起来像兰帕德的老人（非本人)" class>
+                <p class="image-box-title">图2：一个看起来像兰帕德的老人（非本人)</p>
+            </div>
+
+<p>84岁的兰帕德感到自己不行了，他让家人请来全城最著名的牧师，他要向上帝做最后的忏悔。</p>
+<p>兰帕德这一辈子最大的愿望就是当一名作家。从小学到大学，兰帕德的作文一直是全班最好的，经常被老师当作范文读给同学们听，也有不少时候，他的文章出现在班级的黑板报上和校报上，甚至有两篇发表在全国知名的刊物上。兰帕德相信，只要他努力，30岁前他就可以成为一个全国知名的作家。</p>
+<p>有很长一段时间，他都梦想写出经世不朽的作品。遗憾的是，后来，他突然迷上了买彩票，一天到晚对着一大堆数字研究来研究去，最终把写作给耽误了。</p>
+<p>兰帕德也曾深切地懊悔过。那是在他52岁那年，他的一个中学时代的同学，一个曾经对兰帕德佩服得五体投地，经常把兰帕德的作文当范文读的同学，有一天把自己写的第13本书送给兰帕德。</p>
+<p>兰帕德忏悔道：“那一刻，我懊悔极了，我痛恨自己为什么没有去写作。”<br>牧师问道：“那你为什么不从那时起开始写作呢?”</p>
+<p>兰帕德脸上现出十分痛苦的神情，因为这正是他几十年来最懊悔的事情。接到老同学赠送的书的那一刻，他是想从那时起开始写作的。但他觉得年龄大了，何况身体又不好，没有多少时间了，不会再有什么成就了。于是他最终放弃了这种打算。</p>
+<p>兰帕德接着告诉牧师，他65岁那年，得了重病，生命垂危，他深深叹息自己没有在52岁那年开始写作，否则，有13年时间，他一定可以写出不少东西。他说，他没想到老天会给他那么多时间，否则，他一定会好好利用这些时间。</p>
+<p>“为什么不从那时起开始写作呢?” 牧师问。<br>兰帕德又一次陷入深深的自责之中。那时，他曾经好多次想过，如果时间再往前倒回去10年，他一定会毫不犹豫地开始写作的。但他觉得自己已经是一个65岁的老人了，生命留给自己的时间真的不多了，他不可能再有任何作为了。于是他虽然常常叹息，但却仍然没有开始写作。</p>
+<p>73岁那年，他的老同学再次给他送来一本自己刚写的书，并且问他，你有那么多时间，为什么不试着写点东西呢？他长长地叹了一口气，心里说，我已经是快死的人了，还能写出什么东西呢？</p>
+<p>就这样，在一天一天的懊悔中他活到了现在。如果当时他知道自己能活这么久，他一定会从那时起开始专心致志地写作。他相信，那样，他仍然可能取得不小的成就。可现在，他只能把永远的遗憾留给自己了。</p>
+<p>听完兰帕德的忏悔，牧师说道：“其实你并不是不能当一个作家，而是你在不停的懊悔中放弃了当作家的希望。仅有懊悔是绝对不够的。如果你还想当作家的话，那么，就不要再懊悔，不要再犹豫，从现在开始，拿起你的笔吧。”</p>
+<p>“我就要死了，还行吗？”兰帕德不相信地问。<br>牧师郑重地点点头说：“我以上帝的名义告诉你，行!”</p>
+<p>兰帕德的眼里放出一股亮光。<br>霍华德刚刚离开，他就提起了笔。以后的三个月里，他不停地写作，一直到他去世。他的第一本书只写了一半，但那半部书却轰动了全国。</p>
+<p>因为年龄或其他因素对自己想做的事情望而却步，这样的场景在生活中比比皆是：我想学跳舞，可是我都40岁了；我想学画画，可是我50岁了；我想学哈雷，可是我60岁了；我想学跳伞，可是我70岁了还能学吗？下面就是一个关于跳伞的故事。</p>
+<h2 id="故事三《102-岁的跳伞》"><a href="#故事三《102-岁的跳伞》" class="headerlink" title="故事三《102 岁的跳伞》"></a>故事三《102 岁的跳伞》</h2><div class="image-box">
+                <img src="/2020/02/05/three-stories-for-procrastinator/pic3.jpeg" alt="图3：Irene O’Shea 和 她的教练Jed Smith" title="图3：Irene O’Shea 和 她的教练Jed Smith" class>
+                <p class="image-box-title">图3：Irene O’Shea 和 她的教练Jed Smith</p>
+            </div>
+
+<p>第三个故事讲的是一位创造了世界最年长跳伞记录的老太太，她的名字叫Irene O’Shea，来自澳大利亚的阿德莱德，出生于1916年5月30日。上图是她在 2018 年 12 月 9 日跳伞时拍的，当时她已经是 102 岁的高龄了。而这一次是老太太的第三次高空跳伞，而且她说还要跳到 105 岁，那以后的她，每跳一次就会刷新一次自己保持的世界记录了，希望老太太能这样一直跳下去。</p>
+<p>老太太的命运其实并不顺利，她跟丈夫在二战期间相识，1940 年结婚，而 13 年后，也就是 1953 年，丈夫就因罹患癌症不幸去世了，她一手把女儿拉扯大，而且单身了半个多世纪。然而更不幸的事情发生在 2008 年，她的女儿Shelagh 先于她过世了，年仅 67 岁，老太太当时 92 岁，白发人送黑发人。</p>
+<p>女儿患的是一种运动神经元的病（渐冻人就是其中的一种），女儿的离开对她造成了巨大的精神打击，一直都无法从这次阴影中走出来。但是，老太太也并没有因此忘记要感恩，因为女儿在生病过程中澳大利亚运动神经元疾病协会为他们提供了无微不至的关怀，包括联系最好的医生、为他们筹集治疗费等，虽然女儿遭受了病魔无情的折磨，但是如果没有这些好心人的帮忙，恐怕女儿会遭受更多病痛的折磨。</p>
+<p>后来老太太开始对“渐冻人”投入关注，包括一些最新的科研成果和新闻，她也会把自己攒的一些零花钱捐出去给这些人，希望能帮助到像她女儿那样遭受病痛折磨的患者，爱出者爱返，福往者福来。</p>
+<p>一次很偶然的机会，她在电视上看到一名曾参加过诺曼底登陆战役的老兵 Vernon Hayes 挑战了高空跳伞，成为了当时世界上最年长的高空跳伞运动员。不过当时老太太已经快100岁了，于是她也萌生了一个大胆的想法，那就是像这位老兵一样挑战跳伞。</p>
+<p>在经过医生的身体检查，得知身体条件是允许参加挑战项目的情况下，老奶奶便在100岁生日当天，第一次尝试了高空跳伞。而那一次的曝光也为老太太赢得了大量关注，人们被老太太不服老，敢于挑战的精神深深的打动，而老太太也用行动筹集到了来自世界各地的善款。她把筹集到的钱都捐给了运动神经元病的研究机构。迄今为止，Irene通过自己的跳伞挑战为运动神经元疾病协会（Motor Neurone Disease）筹款将近12,000澳元。</p>
+<p>很多人看到这里可能会想，真希望我老了也能做这些事情，我想心态可能是最终要的一件事，其实，Irene老太太并不是第一次做这么疯狂的事情，她84岁那年，独自环球旅行；在92岁那年，她第一次骑了哈雷摩托车；100岁那年，开始挑战尝试跳伞。</p>
+<p>现在老太太有5个外孙和11个曾孙，儿孙满堂的她却喜欢独自生活，没有依靠任何人的照顾，眼不花耳不聋，还经常开着自己的老爷车去社交俱乐部玩纸牌，生活起居都自己打理。</p>
+<p>到这里Irene老太太的故事就讲完了，你会发现年龄对于一个不服输的人来说，从来就不是追求梦想的借口。保持积极乐观的心态，无所畏惧的去做自己想做的事，只要还活着，还能开始，一切都不算晚！</p>
+<p>到这里，这三个故事就全部讲完了，不知道是否给爱拖延的你一些触动，或者给那些一直有梦想却一直在等待一个最佳时机的你一些启迪，是赶快行动起来？还是给了你另外一个启发：拖着吧，等我活到 100 岁再做？希望是前者。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>要得到你想要的某样东西，最可靠的办法是让你自己配得上它</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/%E6%80%9D%E7%BB%B4/"># 思维</a>
+                    
+                        <a href="../../../../tags/%E8%AE%A4%E7%9F%A5/"># 认知</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="../../09/how-to-read-a-book-effectively/">《如何有效阅读一本书：超实用笔记读书法》干货版</a>
+            
+            
+            <a class="next" rel="next" href="../../../01/21/the-benefits-of-using-cloud/">从研发生产、企业管理、企业运营、业务创新剖析企业上云的诸多益处</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 董伟 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
