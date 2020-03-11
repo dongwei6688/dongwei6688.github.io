@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="董伟">
+
+
+
+    <meta name="description" content="记录我的所思、所感、所想，包括一些读书笔记、技术分享、思维实践一些随笔。">
+
+
+    <meta name="keywords" content="读书,思考,技术">
+
+
+<title>离北航毕业不到一年了 | 董伟的空间</title>
+
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../../../../js/script.js"></script>
+    
+    <script src="../../../../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">董伟的日志</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="../../../../index.html">首页</a>
+                
+                    <a class="menu-item" href="../../../../archives">文章</a>
+                
+                    <a class="menu-item" href="../../../../categories">分类</a>
+                
+                    <a class="menu-item" href="../../../../tag">标签</a>
+                
+                    <a class="menu-item" href="../../../../about">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">董伟的日志</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="../../../../index.html">首页</a>
+                
+                    <a class="menu-item" href="../../../../archives">文章</a>
+                
+                    <a class="menu-item" href="../../../../categories">分类</a>
+                
+                    <a class="menu-item" href="../../../../tag">标签</a>
+                
+                    <a class="menu-item" href="../../../../about">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">离北航毕业不到一年了</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        <a href="#">2020-03-11&nbsp;&nbsp;15:50:19</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                        &nbsp; | &nbsp;
+                            
+                                <a href="../../../../categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <div class="image-box">
+                <img src="/2020/03/11/one-year-near-leaving-buaa/buaa.jpeg" alt="北航校园" title class>
+                <p class="image-box-title">北航校园</p>
+            </div>
+
+<h1 id="总体评价"><a href="#总体评价" class="headerlink" title="总体评价"></a>总体评价</h1><p>不管别人怎样评价北航，对我来说，北航无疑是我的第二母校，无比的感恩，同样身为北航学子也无比的荣耀和自豪。<br>因为，对于像我这样一个毕业于内蒙古大学，起点并不高，在北京工作生活了 15 年的互联网行业北漂来说，再一次进入学校学习，再一次走进校园，再一次走进课堂，与一群与你有差不多经历和追求的同学同行，有阅历丰富视野宽阔的老师为你领路，这段学习历程无疑是人生中一段最美好的风景。</p>
+<h1 id="选择北航的原因"><a href="#选择北航的原因" class="headerlink" title="选择北航的原因"></a>选择北航的原因</h1><p>北航是我在选择 MBA 时唯一选择的学校，也没有考虑过其他任何学校，因为北航在我心目中一直就是一所神圣之地，北航的校训“知行合一” 是我非常喜欢的一位哲人王阳明主张的人生哲学，而且北航求真务实的精神也是我一直所追求的人生态度。</p>
+<p>身在互联网工作了 15 年，更看重实践性的东西，喜欢接地气能实操的经验，也更相信成长型思维的力量，所以才在公司高速发展的阶段，选择再次进入学校，并且一定是选一所注重实践的学校来提升自己的管理能力，北航非常注重案例教学，这也是我选择来北航学习的一个重要原因。当然还有一个心愿，能圆自己一个硕士的梦。很高兴，这个小梦想就快要成真了，为此也想对学习的经历有一些总结，希望能给自己一个交代。</p>
+<h1 id="学习的收获"><a href="#学习的收获" class="headerlink" title="学习的收获"></a>学习的收获</h1><p>要说收获，一定要进行对比才知道，而选择对比的也一定不是别人，而是 2 年前未踏入北航校门时候的自己。跟那时候的自己一比，收获了哪些也就一目了然了，我认为主要有以下 3 方面。</p>
+<h3 id="1-对思维和眼界的提升"><a href="#1-对思维和眼界的提升" class="headerlink" title="1. 对思维和眼界的提升"></a>1. 对思维和眼界的提升</h3><p>在入学之前，很多时候思考和看问题的角度还比较单一，爱用的思考方式也主要是线性的，缺乏对一件事情的全面通盘考量，而通过学习之后，通过跟同学老师的思维碰撞之后，在思考问题的时候会不经意间就从更多角度，甚至更多维度(王理老师经常训诫我们：要不断提升你看问题的维度)去进行思考。</p>
+<p>讲一个例子，我在 IDC 圈发表过一篇文章《从研发生产、企业管理、企业运营、业务创新剖析企业上云的诸多益处》，这就是对一件事情认知上深度的变化，我从4 个角度，每个角度又进行了细分去讨论上云这件事。这样就增加了说服力，我想如果是以前，可能只能想到第一层。</p>
+<p>再有，我之前做技术开发的，从来不会关心国家的经济形势，认为与自己关系不大，而且跟生活没有任何交集，但由于 MBA 上学习了宏观&amp;微观经济学、管理经济学、学习了公司理财、会计等课程后，就也开始慢慢去试着理解国家甚至世界的经济走势，尝试去思考他们会怎样影响我们的生活，又会需要我们做哪些行动去应对这种不确定性、如何反脆弱、如何应付黑天鹅事件等。</p>
+<p>而且还开始了之前肯定碰都不会碰的炒股，亲身去感受一下经济的脉搏，投入不多，只是为了让自己有这种视角。</p>
+<h3 id="2-对工作能力的提升"><a href="#2-对工作能力的提升" class="headerlink" title="2. 对工作能力的提升"></a>2. 对工作能力的提升</h3><p>在工作中，尤其是做产品，你需要理解战略思维、营销思维、财务思维、数据思维等等，同样通过在 MBA 的学习中，让我对这些知识方面的缺乏都得到了有效的补充，例如我现在能看懂财务报表了，而且在考虑产品的时候会不自觉的从产品本身（功能、定价，营销、成本）、行业、产业甚至国家政策等方面去考虑，这样你会对自己做的事情就有了更加深刻的认识，至少再也不会像以前做一个研发的时候，只关注产品的功能、性能、稳定性等特征。</p>
+<h3 id="3-跟同窗建立了深厚的友情"><a href="#3-跟同窗建立了深厚的友情" class="headerlink" title="3. 跟同窗建立了深厚的友情"></a>3. 跟同窗建立了深厚的友情</h3><p>社会的复杂和校园的纯净，只有工作多年后再次回归校园的人才更能体会到，因此对这份同窗友谊也倍加的珍惜，每个人都是如此，心怀感恩，彼此珍惜。你会经常发现 2 周不见的同学再次见面时会分外热情，同学里不乏业界精英，企业高管，但彼此之间的感情却异常的纯朴。这也是 MBA 能带给每一个人最大的人生财富了，有句话说，一个人可以走得快，但是多个人同行却能走得远，这些同学将会是一生的伙伴。</p>
+<h1 id="对师弟师妹的建议"><a href="#对师弟师妹的建议" class="headerlink" title="对师弟师妹的建议"></a>对师弟师妹的建议</h1><p>时间过得总是很快，还未开始便感觉要匆匆结束，因此也希望自己的一些经验能为新踏进校园或者即将踏入校园的师弟师妹们一些启发和建议。</p>
+<ul>
+<li>师傅领进门，修行在个人，对于每一门课，老师能做到的只是将我们带进这个学科的大门，并且将一些基础知识的障碍帮我们扫清，如果想要深入还需要个人投入巨大的努力去深钻，学校图书馆是个好地方，希望能好好利用起来。</li>
+<li>学习的时候就认真学，因为你快毕业的时候才会发现，有些东西你可能以后再也不会用到了，但他们也许又是可能将来会帮助到你的知识，那争取一次性把这个基础打牢了，最不可就是学习时想着工作，而工作时又想着学习，从来都不活在当下。</li>
+<li>MBA 学习历程短暂，但确是一段难忘的时光，因此要好好利用这段时间跟本班，本年级，本学院往届下届的同学进行交流，扩大自己的接触点，获得更充足的信息流渠道，可以尝试参加学生会或者跑团这样的组织。</li>
+<li>主动付出，而不是被动等待，可以主动为班级同学做些事情，例如组织聚会、组织学习、维护公众号、维护相册、制作班级空间等等，总之，付出你能付出的，你的收获会比别人多。</li>
+<li>作业、论文要尽早写，不要放到最后一刻，因为总会有一些意外的事情发生，可能会占用你留给作业或者论文的的最后时间，从而导致你挂科或者延期毕业。</li>
+</ul>
+<h1 id="毕业之后"><a href="#毕业之后" class="headerlink" title="毕业之后"></a>毕业之后</h1><p>还有不到一年就要毕业，就要离开这所第二母校，带着北航的光辉，背负着同学、老师们的寄托接着走自己往后的路。</p>
+<p>希望在毕业以后，我们还能一直奉行北航的校训：德才兼备，执行合一，无论身处何方也不要忘记北航人求真务实，勇于创新，敢于做时代弄潮人的精神。</p>
+<p>MBA 人应该有更高的格局和视野，能统揽全局，具备系统化思考的能力，能观览行业，洞察趋势，积极行动。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../../../../tags/%E9%9A%8F%E7%AC%94/"># 随笔</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="../../../02/25/three-stories-for-procrastinator/">给你三个故事治疗你的拖延症</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 董伟 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
